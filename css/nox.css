@@ -210,14 +210,31 @@ details.allergy .count{font-weight:500;color:var(--eyebrow);font-size:14px}
 .chips-wrap{position:sticky;top:60px;background:var(--paper);z-index:5;padding:6px 0 12px;border-bottom:1px solid rgba(217,210,196,.6);margin-bottom:16px}
 .chips{position:static;margin:0 -20px;padding:4px 20px 6px;background:transparent}
 .diet-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding-top:8px}
-.diet-btn{display:inline-flex;align-items:center;gap:7px;padding:7px 15px;border-radius:999px;border:1.5px solid #2d6a4f;background:transparent;color:#1b4332;font:600 13px/1.2 var(--sans);cursor:pointer;transition:all .18s ease}
-.diet-btn:hover{background:rgba(45,106,79,.08)}
-.diet-btn[aria-pressed="true"]{background:#2d6a4f;color:var(--white);box-shadow:0 2px 8px rgba(45,106,79,.25)}
-.diet-btn.gf-btn{border-color:var(--eyebrow);color:var(--eyebrow)}
-.diet-btn.gf-btn:hover{background:rgba(156,90,23,.08)}
-.diet-btn.gf-btn[aria-pressed="true"]{background:var(--eyebrow);color:var(--paper);box-shadow:0 2px 8px rgba(156,90,23,.25)}
-
-.veg-tag{display:inline-flex;align-items:center;gap:4px;font:600 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#1b4332;background:#d8f3dc;border:1px solid #95d5b2;padding:3px 7px;border-radius:999px;margin-left:8px;vertical-align:middle;transform:translateY(-1px)}
+.diet-btn{
+  font:500 .78rem/1 "Work Sans",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.24em;
+  color:var(--nit);
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:999px;
+  min-height:44px;
+  padding:0 16px;
+  cursor:pointer;
+}
+.diet-btn[aria-pressed="true"]{background:var(--nit);color:var(--paper);border-color:var(--nit)}
+.diet-btn:focus-visible{outline:2px solid var(--eyebrow);outline-offset:2px}
+.gf-note{margin:8px 0 0;color:var(--text-2);font-size:14px}
+.veg-tag{
+  font:500 .66rem/1 "Work Sans",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.24em;
+  color:var(--text-2);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:3px 8px;
+  white-space:nowrap;
+}
 .dish[hidden],.menu-section[hidden]{display:none!important}
 
 /* KPIs 10 Aniversario */
