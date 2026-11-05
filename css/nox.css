@@ -309,3 +309,11 @@ details.allergy .count{font-weight:500;color:var(--eyebrow);font-size:14px}
   .hero .hero-seal{position:absolute;inset:auto 8px 52px auto;width:225px;height:auto;margin:0}
   .hero h1{max-width:9.5em}
 }
+
+/* Mòbil: la carta just després del hero; els pilars passen darrere de la carta */
+@media (max-width:759px){
+  main{display:flex;flex-direction:column}
+  main>.pillars-wrap{order:1}
+  main>#carta~*{order:2}
+  .hero .wrap{min-height:min(80svh,640px)}
+}
