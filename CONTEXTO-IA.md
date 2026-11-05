@@ -10,6 +10,7 @@ Este arquivo explica o projeto para outra IA ou pessoa que vá revisar e ajustar
 - **Tipo de site:** site estático; páginas HTML, CSS, fontes e imagens. Não há etapa de compilação nem dependências de pacote.
 - **Idiomas:** catalão (página inicial), espanhol, inglês, francês e português.
 - **Conteúdo:** páginas do restaurante, informações legais e página 404.
+- **Hero atual:** foto aprovada da fachada/terraço fornecida pelo usuário, preparada em `img/hero-fachada-1600.jpg` para desktop e `img/hero-fachada-mobile.jpg` com recorte para celular. As cinco páginas iniciais usam a mesma imagem, com texto alternativo traduzido.
 
 ## Repositório e publicação
 
