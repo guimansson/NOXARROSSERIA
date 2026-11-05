@@ -286,7 +286,7 @@ details.allergy .count{font-weight:500;color:var(--eyebrow);font-size:14px}
 .js .site-header[data-over="hero"]:not(.is-solid) .main-nav a,
 .js .site-header[data-over="hero"]:not(.is-solid) .langs a,
 .js .site-header[data-over="hero"]:not(.is-solid) .langs a[aria-current="true"]{color:var(--paper)}
-.js .site-header[data-over="hero"]:not(.is-solid) .brand small{color:var(--eyebrow-nit)}
+.js .site-header[data-over="hero"]:not(.is-solid) .brand small{color:var(--paper)}
 .js .site-header[data-over="hero"]:not(.is-solid) .main-nav a:hover,
 .js .site-header[data-over="hero"]:not(.is-solid) .langs a:hover{color:var(--eyebrow-nit)}
 .js .site-header[data-over="hero"]:not(.is-solid) :focus-visible{outline-color:var(--paper)}
