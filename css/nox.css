@@ -205,8 +205,6 @@ details.allergy .count{font-weight:500;color:var(--eyebrow);font-size:14px}
 /* === NOX 2027 · 10 Anys, Filtre Vegetarià, Història, KPIs & GA4 Consent === */
 .hero-badge-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:14px}
 .hero .eyebrow{margin:0}
-.badge-10{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(192,120,42,.22);border:1px solid var(--eyebrow-nit);color:var(--paper);font:600 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;backdrop-filter:blur(6px)}
-.badge-10 svg{width:14px;height:14px;color:var(--eyebrow-nit);flex:none}
 
 /* Barra de filtros dinámicos (Vegetariano / Sin Gluten) en la carta */
 .chips-wrap{position:sticky;top:60px;background:var(--paper);z-index:5;padding:6px 0 12px;border-bottom:1px solid rgba(217,210,196,.6);margin-bottom:16px}
@@ -304,3 +302,10 @@ details.allergy .count{font-weight:500;color:var(--eyebrow);font-size:14px}
   .hdr-hidden .chips-wrap,.hdr-hidden .chips{top:0}
 }
 @media (prefers-reduced-motion:reduce){.site-header,.chips-wrap,.chips{transition:none}}
+
+/* Segell 10 anys (substitueix la píndola .badge-10) */
+.hero .hero-seal{position:static;inset:auto;align-self:flex-end;width:135px;height:auto;object-fit:contain;margin:0 -8px 4px 0}
+@media (min-width:900px){
+  .hero .hero-seal{position:absolute;inset:auto 8px 52px auto;width:225px;height:auto;margin:0}
+  .hero h1{max-width:9.5em}
+}
