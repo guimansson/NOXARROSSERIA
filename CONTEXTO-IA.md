@@ -41,7 +41,7 @@ O endereço de teste contém o nome do repositório (`/NOXARROSSERIA/`). Por iss
 /NOXARROSSERIA/img/...
 ```
 
-Isso é necessário para carregar estilos e imagens no endereço de teste. **Não remova o prefixo enquanto o site estiver sendo testado nesse endereço.**
+Isso é necessário para carregar estilos e imagens no endereço de teste. O prefixo precisa estar nos links, atributos `src`, todos os candidatos de `srcset` (inclusive dentro de `<picture>`) e URLs `url(...)` do CSS. **Não remova o prefixo enquanto o site estiver sendo testado nesse endereço.**
 
 Quando houver autorização para migrar o domínio oficial, prepare e teste a versão de domínio próprio: os caminhos devem apontar para a raiz do domínio (por exemplo, `/css/nox.css` e `/img/...`), e as URLs canônicas, o sitemap e as referências de SEO devem corresponder ao endereço oficial. Configure o domínio personalizado no GitHub Pages e só altere o DNS após confirmar a versão e combinar a mudança. Preserve o site antigo durante os testes.
 
