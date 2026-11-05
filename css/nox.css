@@ -278,3 +278,29 @@ details.allergy .count{font-weight:500;color:var(--eyebrow);font-size:14px}
 .cookie-table th,.cookie-table td{padding:10px 8px;border:1px solid rgba(31,42,51,.18);text-align:left;vertical-align:top;overflow-wrap:anywhere}
 .cookie-table th{background:rgba(31,42,51,.06);font-weight:600}
 @media (max-width:640px){.cookie-table{font-size:12px}.cookie-table th,.cookie-table td{padding:8px 5px}}
+/* ── v5 · capçalera transparent sobre el hero ── */
+:root{--hdr:61px}
+.site-header{transition:background-color .25s ease,border-color .25s ease,transform .3s ease}
+/* Només amb JS: sense JS la capçalera queda sòlida com fins ara */
+.js main>.hero:first-child{margin-top:calc(-1 * var(--hdr))}
+.js .site-header[data-over="hero"]:not(.is-solid){background:transparent;border-bottom-color:transparent}
+.js .site-header[data-over="hero"]:not(.is-solid) .brand,
+.js .site-header[data-over="hero"]:not(.is-solid) .main-nav a,
+.js .site-header[data-over="hero"]:not(.is-solid) .langs a,
+.js .site-header[data-over="hero"]:not(.is-solid) .langs a[aria-current="true"]{color:var(--paper)}
+.js .site-header[data-over="hero"]:not(.is-solid) .brand small{color:var(--eyebrow-nit)}
+.js .site-header[data-over="hero"]:not(.is-solid) .main-nav a:hover,
+.js .site-header[data-over="hero"]:not(.is-solid) .langs a:hover{color:var(--eyebrow-nit)}
+.js .site-header[data-over="hero"]:not(.is-solid) :focus-visible{outline-color:var(--paper)}
+/* Vel fosc a dalt de la foto perquè la capçalera es llegeixi */
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:180px;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(31,42,51,.62) 0%,rgba(31,42,51,0) 100%)}
+.hero .wrap{z-index:2}
+/* Mòbil: la capçalera s'amaga en baixar i torna en pujar */
+@media (max-width:899px){
+  .site-header.is-hidden{transform:translateY(-100%)}
+  .site-header:focus-within{transform:none}
+  .chips-wrap,.chips{transition:top .3s ease}
+  .hdr-hidden .chips-wrap,.hdr-hidden .chips{top:0}
+}
+@media (prefers-reduced-motion:reduce){.site-header,.chips-wrap,.chips{transition:none}}
